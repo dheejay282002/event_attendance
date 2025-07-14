@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management Layout Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 100%;
+        }
+        
+        .admin-header {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .admin-card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            line-height: 1.5;
+        }
+        
+        .btn-outline {
+            background: white;
+            color: #374151;
+            border: 2px solid #d1d5db;
+        }
+        
+        .btn-outline:hover {
+            background: #f9fafb;
+            border-color: #7c3aed;
+            color: #7c3aed;
+        }
+        
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            .admin-header {
+                padding: 1.5rem 0;
+            }
+            
+            .quick-links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="admin-header">
+        <div class="container" style="text-align: center;">
+            <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem;">📊 Data Management Center</h1>
+            <p style="font-size: 1.125rem; opacity: 0.9; margin: 0;">
+                Import, export, and manage all system data
+            </p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Test Content -->
+        <div class="admin-card">
+            <div style="padding: 2rem;">
+                <h3 style="margin-bottom: 1rem;">📥 Import Data Section</h3>
+                <p>This section would contain import functionality...</p>
+            </div>
+        </div>
+        
+        <div class="admin-card">
+            <div style="padding: 2rem;">
+                <h3 style="margin-bottom: 1rem;">📤 Export Data Section</h3>
+                <p>This section would contain export functionality...</p>
+            </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="admin-card">
+            <div style="padding: 2rem; text-align: center;">
+                <h4 style="margin: 0 0 1.5rem 0; color: #374151; font-size: 1.25rem;">🔗 Quick Access</h4>
+                <div class="quick-links-grid">
+                    <a href="#" class="btn btn-outline">🗄️ Database Admin</a>
+                    <a href="#" class="btn btn-outline">👥 Legacy Student Upload</a>
+                    <a href="#" class="btn btn-outline">📊 SBO Dashboard</a>
+                    <a href="#" class="btn btn-outline">🎓 Manage Academics</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Spacing -->
+        <div style="height: 3rem;"></div>
+    </div>
+    
+    <script>
+        // Test script to verify layout
+        console.log('Data Management Layout Test Loaded');
+        console.log('Container width:', document.querySelector('.container').offsetWidth);
+        console.log('Body width:', document.body.offsetWidth);
+        console.log('Window width:', window.innerWidth);
+    </script>
+</body>
+</html>
